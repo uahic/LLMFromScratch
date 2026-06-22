@@ -4,11 +4,21 @@ This is a from-scratch implementation of an LLM with the intent to gain experien
 Unfortunately, I do only own 2x RTX 3090 (NVLink coupled) GPUs and not an entire datacenter but I might actually spend money deploying my models on rented hardware once I hit the most recent state-of-the-art wall. 
 I'm using Stanfords CS336 (Language Modeling from Scratch) lecture and unit-test infrastructure as a guide-line but I will also put diffusion-transformer (not covered by this lecture) later into this or a seperate repository.
 
+## Transparency: AI Usage in this repository
+The code has been written fully by hand, using The course material, pencil and paper to work out matrix shapes and reshuffling, reading papers at least partially (e.g. Rope and AdamW) if something was unclear in the lecture.
+
+I did use Claude Opus when asking for best pratices in logging and debugging my config generation code and once I finished the full training loop to search for non-obvious bugs (yes, they existed).
+
+
+# Features
+
 Current features:
 - [x] vanilla dense all-to-all transformer
 - [x] Rope positional embeddings
 - [x] Multiprocessing BPE tokenizer (10k vocab trained on tinyStoriesV2(GPT4))
 - [x] Numerical stable softmax + cross-entropy loss function
+- [x] AdamW Optimizer
+- [x] SGD Optimizer
 - [x] SwiGLU Linear Layer
 - [x] Logging / Tensorboard
 - [x] Checkpointing
