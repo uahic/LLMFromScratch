@@ -5,7 +5,7 @@ Unfortunately, I do only own 2x RTX 3090 (NVLink coupled) GPUs and not an entire
 I'm using Stanfords CS336 (Language Modeling from Scratch) lecture and unit-test infrastructure as a guide-line but I will also put diffusion-transformer (not covered by this lecture) later into this or a seperate repository.
 
 ## Transparency: AI Usage in this repository
-The code has been written fully by hand, using The course material, pencil and paper to work out matrix shapes and reshuffling, reading papers at least partially (e.g. Rope and AdamW) if something was unclear in the lecture.
+The code has been written fully by hand, using the course material - which is very sparse when it comes to implement the features  -  pencil and paper to work out matrix shapes and reshuffling, reading papers at least partially (e.g. Rope and AdamW) whenever something was unclear in the lecture.
 
 I did use Claude Opus when asking for best pratices in logging and debugging my config generation code and once I finished the full training loop to search for non-obvious bugs (yes, they existed).
 
@@ -30,11 +30,11 @@ Needs refinement:
 
 Not implemented yet:
 - [ ] Sharding (well, 'applying' it, not implementing this really from scratch)
-- [ ] (Gated) Linear attention (=> Mamba2?)
+- [ ] (Gated) Linear attention (=> Mamba2)
 - [ ] Mixture of Experts
 - [ ] KV Cache for inference
 - [ ] Fine-tuning training
-- [ ] Tasks via Reinforcment-Learning (although some RL algorithms have been implemented in my other repos, I might copy them over, lets see)
+- [ ] Train tasks via Reinforcment-Learning (although some RL algorithms have been implemented in my other repos, I might copy them over, lets see)
 
 
 Might land in another repo:
