@@ -18,7 +18,7 @@ Needs refinement:
 
 Not implemented yet:
 - [ ] Sharding (well, 'applying' it, not implementing this really from scratch)
-- [ ] Linear Attention
+- [ ] (Gated) Linear attention (=> Mamba2?)
 - [ ] Mixture of Experts
 - [ ] KV Cache for inference
 - [ ] Fine-tuning training
