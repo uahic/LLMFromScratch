@@ -17,9 +17,11 @@ Current features:
 - [x] Rope positional embeddings
 - [x] Multiprocessing BPE tokenizer (10k vocab trained on tinyStoriesV2(GPT4))
 - [x] Numerical stable softmax + cross-entropy loss function
-- [x] AdamW Optimizer
+- [x] AdamW Optimizer + Weight Decay
 - [x] SGD Optimizer
 - [x] SwiGLU Linear Layer
+- [x] Cosine learning rate schedule 
+- [x] Gradient Clipping
 - [x] Logging / Tensorboard
 - [x] Checkpointing
 
